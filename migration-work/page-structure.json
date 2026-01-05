@@ -1,0 +1,228 @@
+{
+  "sections": [
+    {
+      "id": "section-1",
+      "type": "hero",
+      "boundaries": {
+        "startLine": 1,
+        "endLine": 17
+      },
+      "contentSequences": [
+        {
+          "type": "hero-with-image",
+          "elements": [
+            {
+              "type": "image",
+              "description": "Full-width background image with medical/healthcare theme"
+            },
+            {
+              "type": "heading",
+              "text": "Alergologie a imunologie",
+              "level": "h1"
+            },
+            {
+              "type": "subheading",
+              "text": "Typography",
+              "note": "Appears to be placeholder text"
+            }
+          ]
+        }
+      ],
+      "stylingNotes": {
+        "layout": "full-width",
+        "background": "dark overlay on image",
+        "textColor": "white/light text on dark background",
+        "alignment": "left-aligned text",
+        "imagePosition": "background"
+      }
+    },
+    {
+      "id": "section-2",
+      "type": "two-column-content",
+      "boundaries": {
+        "startLine": 18,
+        "endLine": 87
+      },
+      "contentSequences": [
+        {
+          "type": "table-with-info",
+          "column": "left",
+          "elements": [
+            {
+              "type": "heading",
+              "text": "MUDr. Stanislava Heroutová",
+              "level": "h3"
+            },
+            {
+              "type": "subheading",
+              "text": "Otevírací doba"
+            },
+            {
+              "type": "table",
+              "structure": {
+                "headers": ["Den", "Od", "Do"],
+                "rows": [
+                  ["Středa", "10:00", "14:30"],
+                  ["Čtvrtek", "6:00", "10:30"]
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "type": "services-info",
+          "column": "right",
+          "elements": [
+            {
+              "type": "heading",
+              "text": "Dodatečné informace",
+              "level": "h3"
+            },
+            {
+              "type": "subheading",
+              "text": "Poskytované služby",
+              "style": "bold"
+            },
+            {
+              "type": "list",
+              "items": [
+                "alergologie a klinická imunologie",
+                "vyšetření pro dospělé i děti, diagnostika a léčba alergických nemocí - asthma bronchiale celoroční nebo pylová rýma, atopický ekzém, potravinová alergie",
+                "metody - kožní prick testy - na vzdušné alergeny, na potraviny, spirometrické vyšetření laboratorní vyšetření"
+              ]
+            },
+            {
+              "type": "paragraph",
+              "text": "Booking information, insurance companies, IČO",
+              "style": "italic/emphasized"
+            },
+            {
+              "type": "staff-info",
+              "items": [
+                {
+                  "role": "Lékař",
+                  "name": "MUDr. Stanislava Heroutová"
+                },
+                {
+                  "role": "Sestra",
+                  "name": "Marie Šafranková"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "stylingNotes": {
+        "layout": "two-column",
+        "columnRatio": "approximately 40/60 or equal",
+        "background": "white/light",
+        "spacing": "generous padding between columns",
+        "responsive": "likely stacks on mobile"
+      }
+    },
+    {
+      "id": "section-3",
+      "type": "contact-info",
+      "boundaries": {
+        "startLine": 66,
+        "endLine": 86
+      },
+      "contentSequences": [
+        {
+          "type": "contact-details",
+          "elements": [
+            {
+              "type": "heading",
+              "text": "Kde nás najdete",
+              "level": "h3"
+            },
+            {
+              "type": "contact-item",
+              "icon": "phone",
+              "text": "+420 605 571 706",
+              "link": "tel:605571706"
+            },
+            {
+              "type": "contact-item",
+              "icon": "location",
+              "text": "Poliklinika Škoda, č. 293 - přístavek stomatologie (mezipatro)"
+            }
+          ]
+        }
+      ],
+      "stylingNotes": {
+        "layout": "vertical stack",
+        "icons": "left-aligned with text",
+        "iconStyle": "simple icons (call, home)",
+        "spacing": "moderate spacing between items"
+      }
+    }
+  ],
+  "blockInventory": {
+    "potentialBlocks": [
+      {
+        "name": "hero",
+        "usage": "section-1",
+        "description": "Full-width hero with background image and overlay text",
+        "variants": [
+          "hero",
+          "hero-minimal",
+          "hero-centered",
+          "hero-overlay"
+        ],
+        "availableInLibrary": true
+      },
+      {
+        "name": "columns",
+        "usage": "section-2",
+        "description": "Two-column layout with table and information",
+        "variants": [
+          "columns",
+          "columns-contained"
+        ],
+        "availableInLibrary": true
+      },
+      {
+        "name": "table",
+        "usage": "section-2 (left column)",
+        "description": "Opening hours table with doctor name",
+        "variants": [
+          "table"
+        ],
+        "availableInLibrary": true
+      },
+      {
+        "name": "cards",
+        "usage": "section-3 (possible alternative for contact)",
+        "description": "Could use for contact information items",
+        "variants": [
+          "cards",
+          "cards-horizontal"
+        ],
+        "availableInLibrary": true
+      }
+    ],
+    "defaultContent": [
+      {
+        "section": "section-2-right",
+        "type": "services list and staff info",
+        "reason": "Simple structured content, easy to author in Word/Docs"
+      },
+      {
+        "section": "section-3",
+        "type": "contact details",
+        "reason": "Simple text with links, could be default content with icons"
+      }
+    ]
+  },
+  "notes": {
+    "authoringConsiderations": [
+      "Hero section is a clear candidate for a hero block",
+      "Two-column layout could use columns block or could be default content with proper styling",
+      "Opening hours table should likely be a dedicated table block or part of a custom opening-hours block",
+      "Services list and contact info could be default content",
+      "Consider block variants that match the styling (overlay, column ratios, icon styles)"
+    ],
+    "migrationStrategy": "Prioritize authoring experience - use blocks for complex layouts (hero, columns), prefer default content for simple text sections"
+  }
+}

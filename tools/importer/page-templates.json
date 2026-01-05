@@ -1,0 +1,26 @@
+{
+  "templates": [
+    {
+      "name": "medical-department-page",
+      "urls": [
+        "https://poliklinika.skoda-auto.cz/alergologie-a-imunologie"
+      ],
+      "description": "Medical department page template with hero, opening hours table, and services information",
+      "blocks": [
+        {
+          "name": "hero",
+          "instances": [
+            ".hero-image",
+            ".lfr-layout-structure-item-hero-image"
+          ]
+        },
+        {
+          "name": "columns",
+          "instances": [
+            ".opening-time"
+          ]
+        }
+      ]
+    }
+  ]
+}

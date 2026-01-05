@@ -1,0 +1,170 @@
+{
+  "authoringDecisions": [
+    {
+      "sectionId": "section-1",
+      "sectionType": "hero",
+      "decision": "block",
+      "blockName": "hero",
+      "rationale": "Full-width hero with background image and overlay text requires complex styling. This is a clear block candidate per David's Model - an author wouldn't easily replicate this layout in Word/Docs.",
+      "content": {
+        "backgroundImage": "./images/hero-image.jpg",
+        "title": "Alergologie a imunologie",
+        "subheading": "Typography"
+      },
+      "blockStructure": {
+        "columns": 1,
+        "rows": 3,
+        "row1": "Block name (Hero)",
+        "row2": "Background image",
+        "row3": "Title (h1) + Subheading"
+      }
+    },
+    {
+      "sectionId": "section-2",
+      "sectionType": "two-column-content",
+      "decision": "block",
+      "blockName": "columns",
+      "rationale": "Two-column layout with different content types (table vs text) requires structural block. Using Columns block provides clear authoring experience for side-by-side content.",
+      "content": {
+        "leftColumn": {
+          "decision": "nested-block",
+          "blockName": "table",
+          "rationale": "Opening hours table with doctor name - structured tabular data is perfect for Table block",
+          "content": {
+            "title": "MUDr. Stanislava Heroutová",
+            "subtitle": "Otevírací doba",
+            "headers": ["Den", "Od", "Do"],
+            "rows": [
+              ["Středa", "10:00", "14:30"],
+              ["Čtvrtek", "6:00", "10:30"]
+            ]
+          }
+        },
+        "rightColumn": {
+          "decision": "default-content",
+          "rationale": "Services list, booking info, and staff details are simple text with headings and lists - perfect for default content authoring in Word/Docs",
+          "content": {
+            "sections": [
+              {
+                "heading": "Dodatečné informace",
+                "subheading": "Poskytované služby",
+                "list": [
+                  "alergologie a klinická imunologie",
+                  "vyšetření pro dospělé i děti, diagnostika a léčba alergických nemocí - asthma bronchiale celoroční nebo pylová rýma, atopický ekzém, potravinová alergie",
+                  "metody - kožní prick testy - na vzdušné alergeny, na potraviny, spirometrické vyšetření laboratorní vyšetření"
+                ],
+                "bookingInfo": "Objednání telefonicky nebo osobně během ordinační doby.\nSmlouvy se zdravotními pojišťovnami: ČPZP, OZP, VoZP, VZP, ZPŠ.\nPřijímání nových pacientů.\nIČO: 28823303",
+                "staff": [
+                  {"role": "Lékař", "name": "MUDr. Stanislava Heroutová"},
+                  {"role": "Sestra", "name": "Marie Šafranková"}
+                ]
+              },
+              {
+                "heading": "Kde nás najdete",
+                "contactItems": [
+                  {"icon": "phone", "text": "+420 605 571 706", "link": "tel:605571706"},
+                  {"icon": "location", "text": "Poliklinika Škoda, č. 293 - přístavek stomatologie (mezipatro)"}
+                ]
+              }
+            ]
+          }
+        }
+      },
+      "blockStructure": {
+        "columns": 2,
+        "rows": "2+",
+        "row1": "Block name (Columns)",
+        "row2+": "Left column content | Right column content"
+      }
+    }
+  ],
+  "sectionStyling": {
+    "section-1": {
+      "sectionMetadata": {
+        "style": "hero-full-width"
+      },
+      "notes": "Full-width hero section with dark overlay"
+    },
+    "section-2": {
+      "sectionMetadata": {
+        "style": "two-columns-contained"
+      },
+      "notes": "Contained width section with two columns, generous spacing"
+    }
+  },
+  "blocksFetched": [
+    {
+      "blockName": "hero",
+      "source": "library",
+      "path": "/block-collection/hero",
+      "structure": "1 column, 3 rows: block name | background image | title + subheading + CTA"
+    },
+    {
+      "blockName": "columns",
+      "source": "library",
+      "path": "/block-collection/columns",
+      "structure": "Multiple columns and rows: block name | column1 content | column2 content | ..."
+    },
+    {
+      "blockName": "table",
+      "source": "library",
+      "path": "/block-collection/table",
+      "structure": "Multiple columns for table data: block name | header row | data rows"
+    }
+  ],
+  "davidModelPrinciples": {
+    "applied": [
+      "Hero requires complex layout - use block",
+      "Two-column layout requires structural support - use Columns block",
+      "Table with structured data - use Table block",
+      "Simple text content in right column - use default content",
+      "Minimize blocks where default content suffices"
+    ],
+    "summary": "Total blocks: 3 (Hero, Columns with nested Table). Right column uses default content for authoring simplicity."
+  },
+  "variantManagement": {
+    "enrichedCatalog": {
+      "hero": {
+        "decision": "use-vanilla",
+        "variantName": "hero",
+        "source": "library",
+        "rationale": "No existing variants found. Using vanilla hero block from library.",
+        "visualCharacteristics": {
+          "layout": "full-width",
+          "overlay": "dark",
+          "textAlignment": "left",
+          "imagePosition": "background"
+        }
+      },
+      "columns": {
+        "decision": "use-vanilla",
+        "variantName": "columns",
+        "source": "library",
+        "rationale": "No existing variants found. Using vanilla columns block from library.",
+        "visualCharacteristics": {
+          "columnCount": 2,
+          "layout": "side-by-side",
+          "responsive": true
+        }
+      },
+      "table": {
+        "decision": "use-vanilla",
+        "variantName": "table",
+        "source": "library",
+        "rationale": "No existing variants found. Table block created from library. Using vanilla table block.",
+        "visualCharacteristics": {
+          "hasHeader": true,
+          "bordered": true,
+          "style": "clean"
+        }
+      }
+    },
+    "summary": {
+      "totalBlocks": 3,
+      "vanillaBlocks": 3,
+      "reusedVariants": 0,
+      "newVariants": 0,
+      "notes": "First page migration - using vanilla blocks from library. Table block created locally from library code."
+    }
+  }
+}
