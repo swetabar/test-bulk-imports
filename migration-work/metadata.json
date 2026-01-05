@@ -1,0 +1,14 @@
+{
+  "title": "Alergologie a imunologie",
+  "description": "Alergologie a klinická imunologie - vyšetření pro dospělé i děti, diagnostika a léčba alergických nemocí",
+  "url": "https://poliklinika.skoda-auto.cz/alergologie-a-imunologie",
+  "lang": "cs-CZ",
+  "images": [
+    {
+      "path": "content/alergologie-a-imunologie/images/hero-image.jpg",
+      "alt": "",
+      "type": "hero"
+    }
+  ],
+  "previewPath": "http://localhost:3000/alergologie-a-imunologie"
+}
