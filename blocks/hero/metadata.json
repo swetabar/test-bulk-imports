@@ -1,0 +1,18 @@
+{
+  "name": "hero",
+  "type": "vanilla",
+  "createdFrom": "block-collection",
+  "usage": [
+    {
+      "page": "content/consumers/complaints",
+      "url": "https://ndbf.nebraska.gov/consumers/complaints",
+      "date": "2026-01-07"
+    }
+  ],
+  "visualCharacteristics": {
+    "layout": "full-width-banner",
+    "hasBackground": true,
+    "textAlignment": "left",
+    "complexity": "simple"
+  }
+}
