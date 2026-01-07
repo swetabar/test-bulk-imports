@@ -1,0 +1,40 @@
+{
+  "templates": [
+    {
+      "name": "notebook-agency-homepage",
+      "urls": ["https://notebook.agency/"],
+      "description": "Notebook Agency homepage template with hero, services cards, results tabs, testimonials, team, and CTA sections",
+      "blocks": [
+        {
+          "name": "hero-minimal",
+          "instances": [
+            "section#header",
+            "body > section:last-of-type"
+          ]
+        },
+        {
+          "name": "columns-dark",
+          "instances": [
+            "body > section:nth-of-type(3)",
+            "section#growth-engine",
+            "body > section:nth-of-type(8)",
+            "section#team"
+          ],
+          "section": "logo-scroll | growth-engine | testimonials | team"
+        },
+        {
+          "name": "cards-services",
+          "instances": [
+            "section#services"
+          ]
+        },
+        {
+          "name": "tabs-results",
+          "instances": [
+            "section#results"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+.tabs-results {
+  padding: 20px 0;
+}
+
+.tabs-results > div {
+  display: none;
+}
+
+.tabs-results > div:first-child {
+  display: block;
+}
+
+.tabs-results button {
+  cursor: pointer;
+  padding: 10px 20px;
+  margin: 5px;
+  border: 1px solid #ddd;
+  background: #f5f5f5;
+}
+
+.tabs-results button.active {
+  background: #007bff;
+  color: white;
+  border-color: #007bff;
+}
