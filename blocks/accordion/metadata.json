@@ -1,0 +1,19 @@
+{
+  "name": "accordion",
+  "type": "vanilla",
+  "createdFrom": "block-collection",
+  "createdFor": "content/consumers/complaints",
+  "usage": [
+    {
+      "page": "content/consumers/complaints",
+      "url": "https://ndbf.nebraska.gov/consumers/complaints",
+      "date": "2026-01-07"
+    }
+  ],
+  "visualCharacteristics": {
+    "layout": "collapsible-sections",
+    "expandIcon": "plus-sign",
+    "styling": "white-background-with-border",
+    "complexity": "standard"
+  }
+}
