@@ -1,0 +1,38 @@
+{
+  "variantName": "tabs-results",
+  "baseBlock": "tabs",
+  "version": "1.0.0",
+  "created": "2026-01-06T00:00:00.000Z",
+  "sourceContext": {
+    "originUrl": "https://notebook.agency/",
+    "originPage": "homepage",
+    "blockPosition": "middle"
+  },
+  "visualCharacteristics": {
+    "colorScheme": "grey",
+    "density": "spacious",
+    "purpose": "case-studies",
+    "imagePattern": "large"
+  },
+  "contentPattern": {
+    "structure": "tabs with chart images",
+    "buttonCount": 5,
+    "imageCount": 5
+  },
+  "reuseGuidance": {
+    "suitableFor": [
+      "client results showcase",
+      "case study displays",
+      "data visualization tabs"
+    ],
+    "notSuitableFor": [
+      "text-heavy tabbed content",
+      "navigation tabs"
+    ]
+  },
+  "usage": {
+    "pagesUsing": ["content/notebook-agency/index"],
+    "reuseCount": 1,
+    "lastUsed": "2026-01-06T00:00:00.000Z"
+  }
+}

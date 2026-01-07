@@ -1,0 +1,38 @@
+{
+  "variantName": "cards-services",
+  "baseBlock": "cards",
+  "version": "1.0.0",
+  "created": "2026-01-06T00:00:00.000Z",
+  "sourceContext": {
+    "originUrl": "https://notebook.agency/",
+    "originPage": "homepage",
+    "blockPosition": "middle"
+  },
+  "visualCharacteristics": {
+    "colorScheme": "dark",
+    "density": "compact",
+    "purpose": "services-grid",
+    "imagePattern": "icon"
+  },
+  "contentPattern": {
+    "structure": "icon + heading + description",
+    "buttonCount": 0,
+    "imageCount": 8
+  },
+  "reuseGuidance": {
+    "suitableFor": [
+      "service offerings grid",
+      "feature cards with icons",
+      "dark background pages"
+    ],
+    "notSuitableFor": [
+      "photo-heavy cards",
+      "product cards with large images"
+    ]
+  },
+  "usage": {
+    "pagesUsing": ["content/notebook-agency/index"],
+    "reuseCount": 1,
+    "lastUsed": "2026-01-06T00:00:00.000Z"
+  }
+}

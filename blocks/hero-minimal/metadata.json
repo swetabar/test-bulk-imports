@@ -1,0 +1,38 @@
+{
+  "variantName": "hero-minimal",
+  "baseBlock": "hero",
+  "version": "1.0.0",
+  "created": "2026-01-06T00:00:00.000Z",
+  "sourceContext": {
+    "originUrl": "https://notebook.agency/",
+    "originPage": "homepage",
+    "blockPosition": "top"
+  },
+  "visualCharacteristics": {
+    "colorScheme": "dark",
+    "density": "minimal",
+    "purpose": "hero-banner",
+    "imagePattern": "noimg"
+  },
+  "contentPattern": {
+    "structure": "heading + paragraph + CTA",
+    "buttonCount": 1,
+    "imageCount": 0
+  },
+  "reuseGuidance": {
+    "suitableFor": [
+      "text-focused hero sections",
+      "minimal hero banners",
+      "dark background pages"
+    ],
+    "notSuitableFor": [
+      "image-heavy hero sections",
+      "light background pages"
+    ]
+  },
+  "usage": {
+    "pagesUsing": ["content/notebook-agency/index"],
+    "reuseCount": 1,
+    "lastUsed": "2026-01-06T00:00:00.000Z"
+  }
+}

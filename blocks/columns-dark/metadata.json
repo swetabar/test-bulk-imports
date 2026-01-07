@@ -1,0 +1,40 @@
+{
+  "variantName": "columns-dark",
+  "baseBlock": "columns",
+  "version": "1.0.0",
+  "created": "2026-01-06T00:00:00.000Z",
+  "sourceContext": {
+    "originUrl": "https://notebook.agency/",
+    "originPage": "homepage",
+    "blockPosition": "multiple"
+  },
+  "visualCharacteristics": {
+    "colorScheme": "dark",
+    "density": "wide",
+    "purpose": "multi-use-layout",
+    "imagePattern": "mixed"
+  },
+  "contentPattern": {
+    "structure": "flexible column layout",
+    "buttonCount": 0,
+    "imageCount": 0
+  },
+  "reuseGuidance": {
+    "suitableFor": [
+      "logo grids",
+      "testimonial layouts",
+      "team photo grids",
+      "form + content layouts",
+      "dark background pages"
+    ],
+    "notSuitableFor": [
+      "light background pages",
+      "single-column content"
+    ]
+  },
+  "usage": {
+    "pagesUsing": ["content/notebook-agency/index"],
+    "reuseCount": 1,
+    "lastUsed": "2026-01-06T00:00:00.000Z"
+  }
+}
